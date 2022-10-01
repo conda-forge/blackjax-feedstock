@@ -151,4 +151,6 @@ Feedstock Maintainers
 =====================
 
 * [@dirmeier](https://github.com/dirmeier/)
+* [@junpenglao](https://github.com/junpenglao/)
+* [@rlouf](https://github.com/rlouf/)
 
