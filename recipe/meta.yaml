@@ -16,16 +16,18 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - setuptools
     - pip
   run:
-    - python >=3.7
-    - jaxlib >=0.3.10
-    - jax >=0.3.13
-    - jaxopt >=0.4.2
-    - fastprogress >=0.2.0
-
+    - python >=3.9
+    - fastprogress>=1.0.0
+    - jax>=0.4.16
+    - jaxlib>=0.4.16
+    - jaxopt>=0.8
+    - optax>=0.1.7
+    - typing-extensions>=4.4.0       
+    
 test:
   imports:
     - {{ name }}
@@ -44,4 +46,5 @@ extra:
   recipe-maintainers:
     - junpenglao
     - rlouf
+    - albcab
     - dirmeier
