@@ -1,11 +1,11 @@
-About blackjax
-==============
+About blackjax-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/blackjax-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/blackjax-devs/blackjax
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/blackjax-feedstock/blob/main/LICENSE.txt)
 
 Summary: BlackJAX is a sampling library designed for ease of use, speed and modularity
 
