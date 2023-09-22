@@ -1,5 +1,5 @@
 {% set name = "blackjax" %}
-{% set version = "0.9.6" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fb708f183d714750feb475fb87b8162fc1641309f30ee42fd38a5dec82733868
+  sha256: 16207658fada452cc9340fce0c0a591ceb4e6c55ec3448c156ae455b0d4b57a1
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -26,8 +26,8 @@ requirements:
     - jaxlib >=0.4.14
     - jaxopt >=0.8
     - optax >=0.1.7
-    - typing-extensions >=4.4.0       
-    
+    - typing-extensions >=4.4.0
+
 test:
   imports:
     - {{ name }}
