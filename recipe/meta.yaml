@@ -1,5 +1,5 @@
 {% set name = "blackjax" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca4e029b551508f073000472c60b3c11a71554a1c2cf5be76f19d0a9aa157c61
+  sha256: ef0f278103b7f20bdf161450f8f696326692af588713e1904b4dbffd7b8438f6
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
