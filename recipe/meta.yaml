@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 120660f2ecd75e7d307014a2ee62a2318a57973742c4b9ee411014c251a09ffa
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - fastprogress >=1.0.0
     - jax >=0.4.16
     - jaxlib >=0.4.14
@@ -29,6 +29,8 @@ requirements:
     - typing-extensions >=4.4.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - {{ name }}
 
