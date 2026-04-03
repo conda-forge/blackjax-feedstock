@@ -3,7 +3,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
@@ -22,12 +22,15 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - fastprogress >=1.0.0
-    - jax >=0.4.16
-    - jaxlib >=0.4.16
-    - jaxopt >=0.8
-    - optax >=0.1.7
+    - jax >=0.9.0
+    - jaxlib >=0.9.0
+    - numpy >=1.25
+    - optax >=0.2.3
+    - scipy >=1.13
     - typing_extensions >=4.4.0
+
+  run_constrained:
+    - fastprogress >=1.0.0,<1.1
 
 test:
   requires:
