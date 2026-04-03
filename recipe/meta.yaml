@@ -22,15 +22,14 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - fastprogress >=1.0.0
+    - ipython
     - jax >=0.9.0
     - jaxlib >=0.9.0
     - numpy >=1.25
     - optax >=0.2.3
     - scipy >=1.13
     - typing_extensions >=4.4.0
-
-  run_constrained:
-    - fastprogress >=1.0.0,<1.1
 
 test:
   requires:
