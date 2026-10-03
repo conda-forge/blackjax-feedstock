@@ -1,5 +1,5 @@
 {% set name = "blackjax" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f08c83561641b8859239df7058987b13805903582ed1b132411961e8cf42b3d
+  sha256: 5e15e5d574afc40d59cfcf2b7fb4561f24bfa7169d846209ecf2a3b3725cc519
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
